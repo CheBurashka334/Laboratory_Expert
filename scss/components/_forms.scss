@@ -29,13 +29,43 @@ input[type="url"] {
 	display: block;
 	width: 100%;
 	padding: 0 $gutter;
-	height: 41px;
-	line-height: 39px;
+	height: 40px;
+	line-height: 28px;
+	padding: 10px 0 0;
 	vertical-align: middle;
-	border: 1px solid $light-grey;
-	margin: 0.5*$gutter auto;
+	border: 0;
+	border-bottom: 1px solid $border-color;
+	margin: 30px auto;
+	color: #949494;
+	background: transparent;
 	&:focus {
 		outline: none;
+		color: $base-text-color;
+		border-color: #b5b5b5;
+	}
+	&.error {
+		color: $error-color;
+	}
+}
+.textarea-field .lines {
+	width: 100%;
+	height: 41px;
+	border-top: 1px solid $border-color;
+	border-bottom: 1px solid $border-color;
+	position: absolute;
+	top: 39px;
+	left: 0;
+	z-index: 1;
+}
+textarea.inputtext {
+	max-width: 100%;
+	height: 120px;
+	max-height: 120px;
+	line-height: 36px;
+	position: relative;
+	z-index: 2;
+	&:focus + .lines {
+		border-color: #b5b5b5;
 	}
 }
 

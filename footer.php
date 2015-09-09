@@ -1,4 +1,5 @@
 </div> <!-- /.workarea -->
+</div> <!-- /.workarea-wrapper -->
 <div class="footer">
 	<div class="container row">
 		<div class="copy left">
@@ -12,8 +13,12 @@
 </div> <!-- /.page -->
 <div class="dark-bg"></div>
 <div class="page-aside">
-	<button class="btn-close close-page-aside"><svg class="icon"><use xlink:href="#cross"/></svg></button>
-	<div class="page-aside-content"></div>
+	<div class="scroll-box">
+		<button class="btn-close close-page-aside"><svg class="icon"><use xlink:href="#cross"/></svg></button>
+		<div class="scroll-wrapper" id="scroll-aside">
+			<div class="page-aside-content"></div>
+		</div>
+	</div>
 </div>
 </div> <!-- /.layout -->
 </body>

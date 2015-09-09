@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Расширяя горизонты</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Laboratory Expert</title>
+	<!--meta name="viewport" content="width=device-width, initial-scale=1"-->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
@@ -11,6 +11,7 @@
 	<link href="http://fonts.googleapis.com/css?family=Roboto:400italic,100,700italic,300,700,100italic,300italic,400&amp;subset=cyrillic,cyrillic-ext,latin" rel="stylesheet" type="text/css">
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/jquery.jcarousel.min.js"></script>
+	<script src="js/iscroll.js"></script>
 	<script src="js/svg-lib.js"></script>
 	<script src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="template_styles.css" />
@@ -20,7 +21,7 @@
 <div class="layout">
 <!-- для главной добавить класс home-page к page, для новостей и благотворительности - news-page,
 	для проектов - projects-page -->
-<div class="page news-page">
+<div class="page news-page scroll-box">
 	<div class="header">
 		<div class="container clearfix">
 			<div class="logo-box left">
@@ -35,7 +36,7 @@
 						<li class="menu-item"><a href="projects.php" class="menu-link">Проекты</a></li>
 						<li class="menu-item"><a href="news.php" class="menu-link">Новости</a></li>
 						<li class="menu-item"><a href="charity.php" class="menu-link">Благотворительность</a></li>
-						<li class="menu-item"><a href="#contacts" class="menu-link">Контакты</a></li>
+						<li class="menu-item"><a href="contacts.php" class="menu-link get-page-content get-map">Контакты</a></li>
 					</ul>
 				</div>
 				<div class="phone-box">
@@ -55,4 +56,5 @@
 			</div>
 		</div>
 	</div>
-	<div class="workarea">
+	<div class="workarea-wrapper scroll-wrapper" id="scroll-page">
+		<div class="workarea">
