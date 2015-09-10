@@ -1,36 +1,42 @@
 // 404
 .page-404 {
-	padding-top: 6*$gutter;
-	.item-img {
-		text-align: center;
+	.scroll-wrapper {
+		top: 0;
+		bottom: 0;
+	}
+	.workarea-wrapper {
+		background: url('images/content/404.png') center no-repeat;
+	}
+	.workarea {
+		padding: 70px 30px;
+	}
+	.logo-box {
+		display: block;
+		width: 260px;
+		height: 135px;
+		margin: 0 auto 80px;
+		.logo {
+			fill: #fff;
+		}
+	}
+	.item-content {
+		margin-top: 80px;
+		color: #fff;
 	}
 	.item-title {
-		font-size: 26px;
-		line-height: 30px;
-		margin-top: 2*$gutter;
-		text-align: center;
+		font-size: 272px;
+		line-height: 1em;
+		color: #fff;
 	}
-	@media #{$medium-and-up}{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding-top: 100px;
-		.item-img {
-			text-align: right;
-		}
-		.item-title {
-			margin: 2.5*$gutter 0 2*$gutter;
-			text-align: left;
-		}
-		.item-text {
-			line-height: 35px;
-		}
+	.item-text {
+		font-size: 45px;
+		line-height: 1.5em;
+		text-transform: uppercase;
+		margin: 0 auto 40px;
 	}
-	@media #{$large-and-up}{
-		padding-top: 250px;
-		padding-bottom: 170px;
-		.item-title {
-			font-size: 40px;
-		}
+	.btn {
+		width: 250px;
+		height: 80px;
+		line-height: 78px;
 	}
 }

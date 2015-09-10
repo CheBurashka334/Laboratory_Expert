@@ -1,5 +1,6 @@
 </div> <!-- /.workarea -->
 </div> <!-- /.workarea-wrapper -->
+<!-- если не 404 -->
 <div class="footer">
 	<div class="container row">
 		<div class="copy left">
@@ -10,7 +11,9 @@
 		</div>
 	</div>
 </div>
+<!-- /если не 404 -->
 </div> <!-- /.page -->
+<!-- если не 404 -->
 <div class="dark-bg"></div>
 <div class="page-aside">
 	<div class="scroll-box">
@@ -20,6 +23,7 @@
 		</div>
 	</div>
 </div>
+<!-- /если не 404 -->
 </div> <!-- /.layout -->
 </body>
 </html>

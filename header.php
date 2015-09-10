@@ -22,6 +22,7 @@
 <!-- для главной добавить класс home-page к page, для новостей и благотворительности - news-page,
 	для проектов - projects-page -->
 <div class="page news-page scroll-box">
+	<!-- если не 404 -->
 	<div class="header">
 		<div class="container clearfix">
 			<div class="logo-box left">
@@ -31,7 +32,7 @@
 			</div>
 			<div class="content-box right">
 				<div class="main-menu-box">
-					<ul class="main-menu">
+					<ul class="main-menu nostyle">
 						<li class="menu-item"><a href="about.php" class="menu-link active">О компании</a></li>
 						<li class="menu-item"><a href="projects.php" class="menu-link">Проекты</a></li>
 						<li class="menu-item"><a href="news.php" class="menu-link">Новости</a></li>
@@ -56,5 +57,6 @@
 			</div>
 		</div>
 	</div>
+	<!-- /если не 404 -->
 	<div class="workarea-wrapper scroll-wrapper" id="scroll-page">
 		<div class="workarea">

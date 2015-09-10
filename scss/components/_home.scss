@@ -25,3 +25,9 @@
 .about-box {
 	padding: 60px 60px 90px;
 }
+.home-page {
+	.about-box,
+	.news-list {
+		background: #fff;
+	}
+}

@@ -1,5 +1,4 @@
 a {
-	text-decoration: none;
 	word-wrap: break-word;
 }
 
@@ -57,11 +56,8 @@ h1, h2, h3,
 	@extend .dark-text;
 	text-transform: uppercase;
 }
-h2 {
-	
-}
-h3 {
-	
+h1, h2, h3 {
+	margin: 80px 0 30px;
 }
 .rouble {
 	font-family: rouble;
@@ -84,4 +80,67 @@ ol:not(.nostyle){
 	&.links-list {
 		color: $link-color;
 	}
+}
+ul:not(.nostyle){
+	margin: 30px 0 55px;
+	padding: 0;
+	li {
+		margin: 15px 0;
+		padding: 0 0 0 20px;
+		&:before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 7px;
+			left: 0;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: $primary-color-lighten;
+		}
+	}
+}
+
+table {
+	width: 100%;
+	margin: 70px 0;
+	border-collapse: separate;
+	border-spacing: 1px;
+	td, th {
+		padding: 30px;
+		text-align: center;
+		vertical-align: middle;
+		font-weight: 300;
+	}
+	tr:nth-child(even) td {
+		background: #f5f5f5;
+	}
+	tr:nth-child(odd) td {
+		background: #ededed;
+	}
+	tr:first-child th {
+		background: $primary-color;
+		color: #fff;
+	}
+	tr th:first-child,
+	tr td:first-child {
+		text-align: left;
+		min-width: 38%;
+	}
+}
+
+.highlight {
+	background: #f9f9f9;
+}
+.highlight-box {
+	background: #f4f4f4;
+	padding: 50px 0;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+.bgimg-box {
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 60px 0 40px;
 }

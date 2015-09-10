@@ -17,6 +17,8 @@
 	& > div:first-of-type {
 		position: static;
 		width: 100%;
+		padding-top: 1px;
+		padding-bottom: 1px;
 	}
 }
 .iScrollVerticalScrollbar {

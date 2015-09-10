@@ -3,7 +3,8 @@
 input.btn,
 button.btn {
 	display: inline-block;
-	width: 160px;
+	min-width: 160px;
+	padding: 0 20px;
 	font-size: 16px;
 	line-height: 58px;
 	height: 58px;
@@ -17,6 +18,8 @@ button.btn {
 	cursor: pointer;
 	text-transform: uppercase;
 	transition: all .3s;
+	margin: 20px;
+	margin-left: 0;
 	// Gets rid of tap active state
 	-webkit-tap-highlight-color: transparent;
 	
@@ -36,6 +39,10 @@ button.btn {
 			background: #fff;
 			color: #434a5b;
 		}
+	}
+	.center {
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
