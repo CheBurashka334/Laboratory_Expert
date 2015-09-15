@@ -81,7 +81,7 @@ ol:not(.nostyle){
 		color: $link-color;
 	}
 }
-ul:not(.nostyle){
+ul {
 	margin: 30px 0 55px;
 	padding: 0;
 	li {
@@ -100,6 +100,29 @@ ul:not(.nostyle){
 		}
 	}
 }
+
+ul.nostyle,
+ol.nostyle {
+	padding: 0;
+	margin: 0;
+	li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	li:before {
+		display: none;
+	}
+}
+li.nostyle {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	&:before {
+		display: none;
+	}
+}
+
 
 table {
 	width: 100%;
