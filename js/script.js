@@ -6,11 +6,14 @@ $(document).ready(function(){
 	var pageScroll = new IScroll('#scroll-page', {
 		mouseWheel: true,
 		scrollbars: true, 
+		keyBindings: true,
+		click: true,
 		scrollbars: 'custom'
 	});
 	var asideScroll = new IScroll('#scroll-aside', {
 		mouseWheel: true,
 		scrollbars: true, 
+		click: true,
 		scrollbars: 'custom'
 	});
 	
